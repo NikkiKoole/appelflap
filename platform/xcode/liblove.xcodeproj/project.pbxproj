@@ -54,6 +54,7 @@
 		217DFC101D9F6D490055D849 /* url.lua.h in Headers */ = {isa = PBXBuildFile; fileRef = 217DFBD41D9F6D490055D849 /* url.lua.h */; };
 		217DFC111D9F6D490055D849 /* usocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 217DFBD51D9F6D490055D849 /* usocket.c */; };
 		217DFC121D9F6D490055D849 /* usocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 217DFBD61D9F6D490055D849 /* usocket.h */; };
+		CD5068DD2B4F041B004073D5 /* InAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5068B42B4E9E22004073D5 /* InAppPurchase.m */; };
 		D943E58E2A24D56000D80361 /* PhysfsIo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D943E58C2A24D56000D80361 /* PhysfsIo.cpp */; };
 		D943E58F2A24D56000D80361 /* PhysfsIo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D943E58C2A24D56000D80361 /* PhysfsIo.cpp */; };
 		D943E5902A24D56000D80361 /* PhysfsIo.h in Headers */ = {isa = PBXBuildFile; fileRef = D943E58D2A24D56000D80361 /* PhysfsIo.h */; };
@@ -2136,8 +2137,6 @@
 		CD5068B22B4E9DD3004073D5 /* purchase */ = {
 			isa = PBXGroup;
 			children = (
-				CD5068B32B4E9E01004073D5 /* InAppPurchase.h */,
-				CD5068B42B4E9E22004073D5 /* InAppPurchase.m */,
 			);
 			path = purchase;
 			sourceTree = "<group>";
@@ -2204,6 +2203,8 @@
 				FA0B79161A958E3B000E1D17 /* Vector.cpp */,
 				FA0B79171A958E3B000E1D17 /* Vector.h */,
 				FA0B79181A958E3B000E1D17 /* version.h */,
+				CD5068B32B4E9E01004073D5 /* InAppPurchase.h */,
+				CD5068B42B4E9E22004073D5 /* InAppPurchase.m */,
 			);
 			name = common;
 			path = ../../src/common;
@@ -4138,6 +4139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5068DD2B4F041B004073D5 /* InAppPurchase.m in Sources */,
 				FA0B7DE01A95902C000E1D17 /* wrap_Math.cpp in Sources */,
 				FA0B7DA91A95902C000E1D17 /* PVRHandler.cpp in Sources */,
 				FAE64A842071363100BC7981 /* physfs_archiver_iso9660.c in Sources */,

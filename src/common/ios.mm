@@ -24,13 +24,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#include "modules/purchase/InAppPurchase.h"
+
 
 #import <AudioToolbox/AudioServices.h>
 #import <AVFoundation/AVFoundation.h>
 
 #include "modules/audio/Audio.h"
-
+#include "InAppPurchase.h"
 #include <vector>
 
 #include <SDL_events.h>

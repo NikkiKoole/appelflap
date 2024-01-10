@@ -131,5 +131,4 @@
   [defaults setObject:[purchases arrayByAddingObject:productIdentifier] forKey:@"purchases"];
   [defaults synchronize];
 }
-
-@end
+@end

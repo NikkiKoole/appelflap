@@ -15,6 +15,7 @@
 		A93E6EED10420BA8007D418B /* love.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A93E6A3410420AC0007D418B /* love.cpp */; };
 		A9F169AC109E825000FC83D1 /* mpg123.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A9F169A6109E824900FC83D1 /* mpg123.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A9F169AD109E825000FC83D1 /* libmodplug.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A9F16926109E7BAD00FC83D1 /* libmodplug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CD5068DB2B4EF83B004073D5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5068DA2B4EF83A004073D5 /* StoreKit.framework */; };
 		CE73F8001EEB64150052DAB3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE73F7FF1EEB64150052DAB3 /* AVFoundation.framework */; };
 		FA0797991BF480A200034B7C /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0797981BF480A200034B7C /* GameController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FA08F69616C766E000F007B5 /* love.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA08F69116C765A200F007B5 /* love.framework */; };
@@ -110,6 +111,8 @@
 		A97E3842132A9EDE00198A2F /* love-macosx.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "love-macosx.plist"; path = "macosx/love-macosx.plist"; sourceTree = "<group>"; };
 		A9F16926109E7BAD00FC83D1 /* libmodplug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libmodplug.framework; path = macosx/Frameworks/libmodplug.framework; sourceTree = "<group>"; };
 		A9F169A6109E824900FC83D1 /* mpg123.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mpg123.framework; path = macosx/Frameworks/mpg123.framework; sourceTree = "<group>"; };
+		CD5068DA2B4EF83A004073D5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.2.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		CD5068DC2B4EFFBB004073D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CE73F7FF1EEB64150052DAB3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		FA0797981BF480A200034B7C /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
 		FA08F69116C765A200F007B5 /* love.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = love.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +161,7 @@
 				FA84DE78277CB55B002674C6 /* CoreHaptics.framework in Frameworks */,
 				FAE64A9D2072738600BC7981 /* Metal.framework in Frameworks */,
 				FA15DFB41F9B8D9E0042AB22 /* libbz2.tbd in Frameworks */,
+				CD5068DB2B4EF83B004073D5 /* StoreKit.framework in Frameworks */,
 				CE73F8001EEB64150052DAB3 /* AVFoundation.framework in Frameworks */,
 				FA5D24D11A96E73300C6FC8F /* liblove.a in Frameworks */,
 				FA5D24C21A96D78000C6FC8F /* Foundation.framework in Frameworks */,
@@ -179,9 +183,11 @@
 		1058C7A0FEA54F0111CA2CBB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD5068DA2B4EF83A004073D5 /* StoreKit.framework */,
 				FA84DE77277CB55B002674C6 /* CoreHaptics.framework */,
 				FAE64A9C2072738600BC7981 /* Metal.framework */,
 				FA15DFB31F9B8D9E0042AB22 /* libbz2.tbd */,
+				CD5068DC2B4EFFBB004073D5 /* Foundation.framework */,
 				CE73F7FF1EEB64150052DAB3 /* AVFoundation.framework */,
 				FA5D24801A96C97900C6FC8F /* ios */,
 				FA0B7EEC1A959249000E1D17 /* macosx */,
@@ -693,13 +699,14 @@
 					ios/include,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/ios/love-ios.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 11.5;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.love2d.love;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mipolai.appelflap;
 				PRODUCT_NAME = love;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -743,13 +750,14 @@
 					ios/include,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/ios/love-ios.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 11.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.love2d.love;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mipolai.appelflap;
 				PRODUCT_NAME = love;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -794,13 +802,14 @@
 					ios/include,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/ios/love-ios.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 11.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.love2d.love;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mipolai.appelflap;
 				PRODUCT_NAME = love;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
