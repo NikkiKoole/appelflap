@@ -1270,6 +1270,8 @@
 		217DFBD41D9F6D490055D849 /* url.lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = url.lua.h; sourceTree = "<group>"; };
 		217DFBD51D9F6D490055D849 /* usocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usocket.c; sourceTree = "<group>"; };
 		217DFBD61D9F6D490055D849 /* usocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usocket.h; sourceTree = "<group>"; };
+		CD5068B32B4E9E01004073D5 /* InAppPurchase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InAppPurchase.h; sourceTree = "<group>"; };
+		CD5068B42B4E9E22004073D5 /* InAppPurchase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InAppPurchase.m; sourceTree = "<group>"; };
 		D943E58C2A24D56000D80361 /* PhysfsIo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysfsIo.cpp; sourceTree = "<group>"; };
 		D943E58D2A24D56000D80361 /* PhysfsIo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysfsIo.h; sourceTree = "<group>"; };
 		FA08F5AE16C7525600F007B5 /* liblove-macosx.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "liblove-macosx.plist"; path = "macosx/liblove-macosx.plist"; sourceTree = "<group>"; };
@@ -2131,6 +2133,15 @@
 			sourceTree = "<group>";
 			usesTabs = 1;
 		};
+		CD5068B22B4E9DD3004073D5 /* purchase */ = {
+			isa = PBXGroup;
+			children = (
+				CD5068B32B4E9E01004073D5 /* InAppPurchase.h */,
+				CD5068B42B4E9E22004073D5 /* InAppPurchase.m */,
+			);
+			path = purchase;
+			sourceTree = "<group>";
+		};
 		FA08F5AC16C751BA00F007B5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -2589,6 +2600,7 @@
 		FA0B7B3C1A95902C000E1D17 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				CD5068B22B4E9DD3004073D5 /* purchase */,
 				FA0B7B3D1A95902C000E1D17 /* audio */,
 				FACA02DF1F5E396B0084B28F /* data */,
 				FA0B7B521A95902C000E1D17 /* event */,

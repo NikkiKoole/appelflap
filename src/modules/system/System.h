@@ -114,6 +114,27 @@ public:
 	 **/
 	bool hasBackgroundMusic() const;
 
+	/**
+		 * Restores the purchases stored in local memory.
+		 */
+		virtual void restorePurchases() const;
+
+		/**
+		 * Returns whether or not the user has purchased the specified product.
+		 *
+		 * @param The product identifier of the purchase.
+		 */
+		virtual bool hasPurchase(const std::string &productIdentifier) const;
+
+		/**
+		 * Initiates a menu to make a purchase.
+		 *
+		 * @param The product identifier of the purchase.
+		 */
+		virtual void makePurchase(const std::string &productIdentifier) const;
+
+	
+	
 	static bool getConstant(const char *in, PowerState &out);
 	static bool getConstant(PowerState in, const char *&out);
 

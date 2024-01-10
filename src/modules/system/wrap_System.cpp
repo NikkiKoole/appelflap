@@ -101,6 +101,29 @@ int w_hasBackgroundMusic(lua_State *L)
 	return 1;
 }
 
+
+
+int w_restorePurchases(lua_State *L)
+{
+#pragma unused(L)
+  instance()->restorePurchases();
+  return 0;
+}
+
+int w_hasPurchase(lua_State *L)
+{
+  std::string productIdentifier = luax_checkstring(L, 1);
+  luax_pushboolean(L, instance()->hasPurchase(productIdentifier));
+  return 1;
+}
+
+int w_makePurchase(lua_State *L)
+{
+  std::string productIdentifier = luax_checkstring(L, 1);
+  instance()->makePurchase(productIdentifier);
+  return 0;
+}
+
 static const luaL_Reg functions[] =
 {
 	{ "getOS", w_getOS },
@@ -111,6 +134,9 @@ static const luaL_Reg functions[] =
 	{ "openURL", w_openURL },
 	{ "vibrate", w_vibrate },
 	{ "hasBackgroundMusic", w_hasBackgroundMusic },
+	{ "restorePurchases", w_restorePurchases },
+	{ "hasPurchase", w_hasPurchase },
+	{ "makePurchase", w_makePurchase },
 	{ 0, 0 }
 };
 
