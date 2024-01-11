@@ -2137,6 +2137,8 @@
 		CD5068B22B4E9DD3004073D5 /* purchase */ = {
 			isa = PBXGroup;
 			children = (
+				CD5068B32B4E9E01004073D5 /* InAppPurchase.h */,
+				CD5068B42B4E9E22004073D5 /* InAppPurchase.m */,
 			);
 			path = purchase;
 			sourceTree = "<group>";
@@ -2203,8 +2205,6 @@
 				FA0B79161A958E3B000E1D17 /* Vector.cpp */,
 				FA0B79171A958E3B000E1D17 /* Vector.h */,
 				FA0B79181A958E3B000E1D17 /* version.h */,
-				CD5068B32B4E9E01004073D5 /* InAppPurchase.h */,
-				CD5068B42B4E9E22004073D5 /* InAppPurchase.m */,
 			);
 			name = common;
 			path = ../../src/common;

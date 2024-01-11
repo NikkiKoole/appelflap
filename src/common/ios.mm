@@ -30,7 +30,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 #include "modules/audio/Audio.h"
-#include "InAppPurchase.h"
+#include "modules/purchase/InAppPurchase.h"
 #include <vector>
 
 #include <SDL_events.h>
